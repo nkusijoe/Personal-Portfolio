@@ -191,14 +191,12 @@ background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
     box-shadow: 0 0 20px;
     transition: all .3s ease-in-out;
 }
-.detail span {
+/* .detail span {
     background: #F7086C;
 background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-}
-
-
+} */
 
 .images {
     width: 80%;
@@ -236,7 +234,7 @@ background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
     animation: btn-ani 1s ease forwards;
     animation-delay: .4s;
 }
-.detail button {
+/* .detail button {
     display: inline-block;
     height: 42px;
     width: 132px;
@@ -254,7 +252,7 @@ background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
     -webkit-text-fill-color: var(--primary-dark);
     background: linear-gradient(90deg, rgba(255,95,109,1) 0%, rgba(53,201,252,1) 100%);
     transition: all .3s ease-in-out;
-}
+} */
 
 /* Section 1 End */
 
@@ -294,20 +292,29 @@ background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
+    transition: background-color 0.3s ease;
+    color: #007bff; /* Default text color for light mode */
+
+    /* Add the following styles to override in dark mode */
+    --detail-background-dark: var(--primary-dark);
+    --detail-text-color-dark: #ffffff;
 }
+
 .dark-mode .detail {
-    color: var(--primary-dark);
-    background-color: var(--primary-color);
+    background-color: var(--detail-background-dark);
+    color: var(--detail-text-color-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 .detail h1 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #007bff; /* Change the color as needed */
+    color: #007bff; 
 }
 
 .detail h1 span {
-    color: #333; /* Change the color as needed */
+    color: #333;
 }
 
 .detail p {
