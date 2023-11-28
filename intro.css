@@ -276,7 +276,7 @@ background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
 
 .dark-mode .detail button { 
     background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: var(--primary-dark);
     
 }
@@ -294,6 +294,10 @@ background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
+}
+.dark-mode .detail {
+    color: var(--primary-dark);
+    background-color: var(--primary-color);
 }
 
 .detail h1 {
@@ -540,6 +544,3 @@ h1, ul, li {
         margin: auto;
     }
 }
-
-
-
