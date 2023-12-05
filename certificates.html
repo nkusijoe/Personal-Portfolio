@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="intro.css">
+
+
     <title>Certificates. Joe David Nkusi</title>
 </head>
 
@@ -29,14 +31,14 @@
                 <li><a href="skills.html" style="--navAni:3">Skills</a></li>
                 <li><a href="certificates.html" class="active" style="--navAni:4">Certificates</a></li>
                 <li><a href="contact.html" style="--navAni:5">Contact</a></li>
-            </ul>            
+            </ul>
             <label class="mode">
                 <input type="checkbox" id="darkbtn">
                 <i class='bx bxs-moon'></i>
             </label>
         </div>
     </header>
-    
+
     <section class="container">
         <div class="main">
             <div class="social">
@@ -46,27 +48,44 @@
                 <a href="#" style="--socialAni:5"><i class='bx bxl-twitter'></i></a>
                 <a href="https://github.com/nkusijoe" style="--socialAni:6"><i class='bx bxl-github'></i></a>
             </div>
-            <div class="detail">
-                <h1>Hi, I'm <span>Nkusi Joe </span></h1>
-                <h3>Web Developer</h3>
-                <p>I'm a professional Web Developer. Our Main Goal to help & Satisficed the Local & Global Clients by
-                    web development solutions
-                </p>
-                <div class="btn">
-                    <button>Download CV</button>
-                </div>
+
+            <div class="certificate-list"><br>
+                <div class="detail"><h1>My <span>Certificates</span></h1></div><br>
                 
-            </div>
-            <div class="img-sec">
-                <div class="images">
-                    <img src="sahr.png" alt="" class="img-w">
-                </div>
+                <ul>
+                    <div class="detail">
+                        <li>
+                            <div class="certificate-details">
+                                <strong>Certificate Title:</strong> Web Development Masterclass<br>
+                                <strong>Issued By:</strong> XYZ University<br>
+                                <strong>Issue Date:</strong> January 1, 2022<br>
+                                <img src="certificate1.jpg" alt="Web Development Certificate" style="max-width: 300px;">
+                            </div>
+                        </li>
+                    </div>
+                    
+                    <!-- Add more certificates as needed -->
+                </ul>
+                <ul>
+                    <div class="detail">
+                        <li>
+                            <div class="certificate-details">
+                                <strong>Certificate Title:</strong> Web Development Masterclass<br>
+                                <strong>Issued By:</strong> XYZ University<br>
+                                <strong>Issue Date:</strong> January 1, 2022<br>
+                                <img src="certificate1.jpg" alt="Web Development Certificate" style="max-width: 300px;">
+                            </div>
+                        </li>
+                    </div>
+                    
+                    <!-- Add more certificates as needed -->
+                </ul>
             </div>
         </div>
     </section>
-    
+
     <script>
-                const darkbtn = document.getElementById('darkbtn');
+        const darkbtn = document.getElementById('darkbtn');
         const body = document.body;
         const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
         if (isDarkMode) {
